@@ -1,0 +1,37 @@
+Face Detection Application
+
+Description:
+This Python application uses OpenCV to detect faces using a webcam in real time. The application utilizes the Haar Cascade Classifier (`haarcascade_frontalface_default.xml`) to identify faces from the live video feed.
+
+Usage Instructions:
+1. Ensure that the `haarcascade_frontalface_default.xml` file is in the same directory as this script.
+2. To run the application:
+   - Open a terminal/command prompt in the folder containing the script.
+   - Run the script using Python:
+     ```bash
+     python app.py
+     ```
+3. The webcam feed will open, and faces will be detected in real-time.
+4. Press the 'q' key to quit the application at any time.
+
+Key Features:
+- Real-time face detection using the webcam.
+- Displays rectangles around detected faces.
+- Prints the result of face detection once the application is stopped.
+- Option to exit the application by pressing 'q'.
+
+Output:
+Once the application exits, the result of the face detection session will be printed in the terminal:
+- "A face was detected during the session." if a face was detected.
+- "No face was detected during the session." if no face was detected.
+
+Requirements:
+- Python 3.x
+- OpenCV library (`opencv-python`)
+- NumPy library (required for OpenCV)
+
+Installation:
+To install the necessary libraries, run the following commands:
+```bash
+pip install opencv-python
+pip install numpy
